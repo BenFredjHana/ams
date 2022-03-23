@@ -1,0 +1,15 @@
+<h1 align="center">Welcome to Angular </h1>
+
+<h2>Le formateur est: {{formateur}} </h2>
+<h2>Le prix est: {{prix}} </h2>
+
+<h4>La formation est en mode hybride: {{estHybride}} </h4>
+<h2>Le contenu de la formation: </h2>
+
+<ul>
+  <li *ngFor="let topic of bootcamp">
+    {{topic|uppercase|topics}}
+  </li>
+</ul>
+
+<app-home></app-home>
